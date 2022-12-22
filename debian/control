@@ -1,0 +1,30 @@
+Source: python-csscompressor
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+ Sakirnth Nagarasa <sakirnth@gmail.com>,
+Build-Depends:
+ debhelper-compat (= 11),
+ dh-python,
+ openstack-pkg-tools,
+ python3-all,
+ python3-setuptools,
+Build-Depends-Indep:
+ python3-pytest,
+Standards-Version: 4.1.0
+Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-csscompressor
+Vcs-Git: https://salsa.debian.org/openstack-team/python/python-csscompressor.git
+Homepage: https://github.com/sprymix/csscompressor
+
+Package: python3-csscompressor
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Python port of YUI CSS Compressor - Python 3.x
+ The Python csscompressor package provides an almost exact port of YUI CSS
+ Compressor. It passes all original unittests.
+ .
+ This package contains the Python 3.x module.

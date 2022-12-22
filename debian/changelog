@@ -1,0 +1,50 @@
+python-csscompressor (0.9.5-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+  * Added a debian/salsa-ci.yaml and fixed watch file.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 14 Oct 2020 10:07:52 +0200
+
+python-csscompressor (0.9.5-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 08 Sep 2020 14:54:14 +0200
+
+python-csscompressor (0.9.4-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/copyright: Changed source URL to https protocol
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Daniel Baumann ]
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Updating standards version to 4.1.0.
+
+  [ Sakirnth Nagarasa ]
+  * Dropping Py2 support (Closes: #937676).
+
+  [ Thomas Goirand ]
+  * Using pkgos-dh_auto_install.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 05 Sep 2019 16:52:15 +0200
+
+python-csscompressor (0.9.4-2) unstable; urgency=medium
+
+  * Using python$$i -m pytest instead of py.test-$$i when running unit tests.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 28 Dec 2015 09:16:56 +0000
+
+python-csscompressor (0.9.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #808764)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 22 Dec 2015 11:25:29 +0100
